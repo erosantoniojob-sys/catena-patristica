@@ -25,7 +25,7 @@ def get(params):
 for i, a in enumerate(authors):
     w = a.get("w") or ""
     m = re.match(r"https?://en\.wikipedia\.org/wiki/([^#?]+)", w)
-    if not m or a.get("c") in SKIP:
+    if not m or a.get("c") in SKIP or (a.get("y") or 0) > 1800:   # sem fotografias de autores modernos
         continue
     title = urllib.parse.unquote(m.group(1))
     try:
