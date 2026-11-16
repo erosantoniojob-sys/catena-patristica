@@ -1,2 +1,2 @@
 books=all
-shards=20
+shards=16
