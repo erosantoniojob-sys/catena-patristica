@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: traduzir-${{ github.ref }}
@@ -82,7 +83,32 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add docs/tr tools/logs
-          git diff --cached --quiet && { echo "nada novo"; exit 0; }
+          if git diff --cached --quiet; then echo "nada novo"; echo "novo=0" >> "$GITHUB_ENV"; exit 0; fi
           git commit -m "Traduções automáticas (rodada ${{ github.run_number }})"
-          git pull --rebase origin "${{ github.ref_name }}"
-          git push origin "HEAD:${{ github.ref_name }}"
+          for i in 1 2 3; do git pull --rebase origin "${{ github.ref_name }}" && git push origin "HEAD:${{ github.ref_name }}" && break; sleep 15; done
+          echo "novo=1" >> "$GITHUB_ENV"
+      - name: Continuar se ainda falta traduzir
+        if: env.novo == '1'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          falta=$(python3 - <<'PY'
+          import glob, json, os, re
+          books = "john"
+          for line in open("tools/request.txt"):
+              if line.startswith("books="):
+                  books = line.split("=", 1)[1].strip().lower()
+          files = [f for f in glob.glob("docs/data/*.json") if re.search(r"-\d+\.json$", f)]
+          if books != "all":
+              want = set(b.strip() for b in books.split(","))
+              files = [f for f in files if os.path.basename(f).rsplit("-", 1)[0] in want]
+          n = 0
+          for f in files:
+              t = os.path.join("docs/tr", os.path.basename(f))
+              if not os.path.exists(t) or '"_partial":true' in open(t, encoding="utf-8").read()[-40:]:
+                  n += 1
+          print(n)
+          PY
+          )
+          echo "arquivos ainda por traduzir: $falta"
+          if [ "$falta" -gt 0 ]; then gh workflow run translate.yml --ref "${{ github.ref_name }}"; fi

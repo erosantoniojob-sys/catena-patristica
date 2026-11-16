@@ -1,2 +1,2 @@
-books=john
-shards=15
+books=all
+shards=20
