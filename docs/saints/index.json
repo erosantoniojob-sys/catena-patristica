@@ -289,6 +289,11 @@
 "lic": "CC0",
 "src": "https://commons.wikimedia.org/wiki/File:Gregory_the_Great_with_the_Holy_Spirit.jpg"
 },
+"Hegemonius": {
+"f": "132.jpg",
+"lic": "CC0",
+"src": "https://commons.wikimedia.org/wiki/File:Frontispiece_of_the_Acta_Archelai_by_Hegemonius,_1906_edition.jpg"
+},
 "Hegesippus": {
 "f": "133.jpg",
 "lic": "Public domain",
@@ -444,11 +449,6 @@
 "lic": "Public domain",
 "src": "https://commons.wikimedia.org/wiki/File:Stamp_of_Albania_-_1998_-_Colnect_370782_-_Nicetas_of_Remesiana_c_335_414_Bishop_of_Remesiana.jpeg"
 },
-"Nilus of Sinai": {
-"f": "205.jpg",
-"lic": "Public domain",
-"src": "https://commons.wikimedia.org/wiki/File:Nil_Postnik.jpg"
-},
 "Odes of Solomon": {
 "f": "207.jpg",
 "lic": "CC0",
@@ -549,16 +549,6 @@
 "lic": "Public domain",
 "src": "https://commons.wikimedia.org/wiki/File:Spinello_Aretino_008.jpg"
 },
-"Pope Urban I": {
-"f": "243.jpg",
-"lic": "Public domain",
-"src": "https://commons.wikimedia.org/wiki/File:Sala_di_costantino,_papa_urbano_I_tra_la_giustizia_e_la_carit%C3%A0.jpg"
-},
-"Pope Zephyrinus": {
-"f": "244.jpg",
-"lic": "Public domain",
-"src": "https://commons.wikimedia.org/wiki/File:Fresco_of_Pope_Zephyrinus_-_Basilica_of_Saint_Paul_Outside_the_Walls_(Before_1823).png"
-},
 "Prosper of Aquitaine": {
 "f": "250.jpg",
 "lic": "Public domain",
@@ -573,6 +563,11 @@
 "f": "252.jpg",
 "lic": "Public domain",
 "src": "https://commons.wikimedia.org/wiki/File:BLAdd24199PrudentiusFol11v.jpg"
+},
+"Pseudo-Barnabas": {
+"f": "256.jpg",
+"lic": "Public domain",
+"src": "https://commons.wikimedia.org/wiki/File:Codex_Tchacos_p33.jpg"
 },
 "Pseudo-Chrysostom": {
 "f": "258.jpg",
