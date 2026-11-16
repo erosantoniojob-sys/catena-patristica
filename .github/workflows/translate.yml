@@ -1,0 +1,88 @@
+name: Traduzir comentários
+
+# Dispara quando tools/request.txt muda (ou manualmente, na aba Actions).
+on:
+  push:
+    paths: ["tools/request.txt"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: traduzir-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  plano:
+    runs-on: ubuntu-latest
+    outputs:
+      books: ${{ steps.p.outputs.books }}
+      total: ${{ steps.p.outputs.total }}
+      matrix: ${{ steps.p.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: p
+        run: |
+          books=$(grep -E '^books=' tools/request.txt | head -1 | cut -d= -f2 | tr -d ' \r')
+          total=$(grep -E '^shards=' tools/request.txt | head -1 | cut -d= -f2 | tr -d ' \r')
+          case "$total" in ''|*[!0-9]*) total=4;; esac
+          [ "$total" -gt 20 ] && total=20
+          [ "$total" -lt 1 ] && total=1
+          [ -z "$books" ] && books=john
+          echo "books=$books" >> "$GITHUB_OUTPUT"
+          echo "total=$total" >> "$GITHUB_OUTPUT"
+          echo "matrix=[$(seq -s, 0 $((total-1)))]" >> "$GITHUB_OUTPUT"
+
+  traduzir:
+    needs: plano
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: ${{ fromJSON(needs.plano.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install argostranslate
+      - name: Traduzir
+        env:
+          BOOKS: ${{ needs.plano.outputs.books }}
+          TOTAL: ${{ needs.plano.outputs.total }}
+        run: |
+          mkdir -p out/tr out/logs
+          python tools/translate.py ${{ matrix.shard }} "$TOTAL" "$BOOKS" 320 2>&1 | tee out/logs/lote-${{ matrix.shard }}.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: tr-${{ matrix.shard }}
+          path: out/
+          if-no-files-found: ignore
+
+  reunir:
+    needs: traduzir
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          path: baixado
+          pattern: tr-*
+          merge-multiple: true
+      - name: Gravar no repositório
+        run: |
+          mkdir -p docs/tr tools/logs
+          [ -d baixado/tr ] && cp -f baixado/tr/*.json docs/tr/ 2>/dev/null || true
+          [ -d baixado/logs ] && cp -f baixado/logs/*.log tools/logs/ 2>/dev/null || true
+          rm -rf baixado
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/tr tools/logs
+          git diff --cached --quiet && { echo "nada novo"; exit 0; }
+          git commit -m "Traduções automáticas (rodada ${{ github.run_number }})"
+          git pull --rebase origin "${{ github.ref_name }}"
+          git push origin "HEAD:${{ github.ref_name }}"
