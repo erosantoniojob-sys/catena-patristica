@@ -1,4 +1,3 @@
-modelo: en -> pb
-1 arquivos neste lote
-2026-11-16 11:59:10 WARNING: Language en package default expects mwt, which has been added
-john-12.json: 700 trechos novos em 1507s (0.99 MB no arquivo)
+21:33:56 modelo: en -> pb
+21:33:56 10 arquivos neste lote
+21:53:56 1corinthians-3.json: parcial, 696 trechos, 682 mil caracteres em 20 min; faltam 104 trechos
