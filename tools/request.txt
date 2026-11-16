@@ -1,2 +1,3 @@
 books=all
 shards=16
+rodada=2

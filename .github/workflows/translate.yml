@@ -53,15 +53,11 @@ jobs:
         env:
           BOOKS: ${{ needs.plano.outputs.books }}
           TOTAL: ${{ needs.plano.outputs.total }}
+          BRANCH: ${{ github.ref_name }}
         run: |
-          mkdir -p out/tr out/logs
-          python tools/translate.py ${{ matrix.shard }} "$TOTAL" "$BOOKS" 320 2>&1 | tee out/logs/lote-${{ matrix.shard }}.log
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: tr-${{ matrix.shard }}
-          path: out/
-          if-no-files-found: ignore
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          python tools/translate.py ${{ matrix.shard }} "$TOTAL" "$BOOKS" 320
 
   reunir:
     needs: traduzir
@@ -69,24 +65,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/download-artifact@v4
-        with:
-          path: baixado
-          pattern: tr-*
-          merge-multiple: true
-      - name: Gravar no repositório
+      - name: Conferir se houve avanço
         run: |
-          mkdir -p docs/tr tools/logs
-          [ -d baixado/tr ] && cp -f baixado/tr/*.json docs/tr/ 2>/dev/null || true
-          [ -d baixado/logs ] && cp -f baixado/logs/*.log tools/logs/ 2>/dev/null || true
-          rm -rf baixado
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/tr tools/logs
-          if git diff --cached --quiet; then echo "nada novo"; echo "novo=0" >> "$GITHUB_ENV"; exit 0; fi
-          git commit -m "Traduções automáticas (rodada ${{ github.run_number }})"
-          for i in 1 2 3; do git pull --rebase origin "${{ github.ref_name }}" && git push origin "HEAD:${{ github.ref_name }}" && break; sleep 15; done
-          echo "novo=1" >> "$GITHUB_ENV"
+          git pull -q origin "${{ github.ref_name }}" || true
+          if [ "$(git rev-parse HEAD)" != "${{ github.sha }}" ]; then echo "novo=1" >> "$GITHUB_ENV"; else echo "novo=0" >> "$GITHUB_ENV"; fi
       - name: Continuar se ainda falta traduzir
         if: env.novo == '1'
         env:

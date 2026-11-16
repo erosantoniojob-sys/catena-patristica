@@ -294,7 +294,7 @@ footer::before{content:"✠";display:block;color:var(--gold);margin-bottom:8px}
     <div id="list"></div>
   </main>
   <footer>
-    Textos: Commentaries Database do projeto Historical Christian Faith (domínio público), em tradução inglesa. Cada trecho traz a obra de origem e o link da fonte. Os textos aparecem em português por tradução automática de IA, feita na primeira leitura e guardada; confira com o original antes de citar. Texto bíblico: Bíblia Livre (BLIVRE), Copyright © 2018 Diego Santos, Mario Sérgio e Marco Teles, licença Creative Commons Atribuição 4.0 Brasil. Trechos marcados "via Catena Áurea" são a seleção e o resumo que Tomás de Aquino fez de cada autor, não a obra direta. Retratos dos autores: Wikimedia Commons, apenas obras em domínio público. Imagens do topo: fotografias enviadas pelo autor do aplicativo.
+    Textos: Commentaries Database do projeto Historical Christian Faith (domínio público), em tradução inglesa. Cada trecho traz a obra de origem e o link da fonte. Os textos em português são tradução automática e podem conter erros; confira com o original antes de citar. Texto bíblico: Bíblia Livre (BLIVRE), Copyright © 2018 Diego Santos, Mario Sérgio e Marco Teles, licença Creative Commons Atribuição 4.0 Brasil. Trechos marcados "via Catena Áurea" são a seleção e o resumo que Tomás de Aquino fez de cada autor, não a obra direta. Retratos dos autores: Wikimedia Commons, apenas obras em domínio público. Imagens do topo: fotografias enviadas pelo autor do aplicativo.
   </footer>
 </div>
 <script>
@@ -490,7 +490,7 @@ function render(resetAuthors){
 
 const DOCS=[["Trindade",["Mateus 28.19","João 1.1","2 Coríntios 13.13","João 10.30"]],["Divindade de Cristo",["João 1.1","Filipenses 2.6","Colossenses 1.15","Hebreus 1.3"]],["Encarnação",["João 1.14","Filipenses 2.7","Gálatas 4.4"]],["Espírito Santo",["João 15.26","Atos 5.3","1 Coríntios 2.10"]],["Criação e imagem de Deus",["Gênesis 1.1","Gênesis 1.26"]],["Pecado original",["Romanos 5.12","Salmos 51.5","Efésios 2.3"]],["Graça e livre-arbítrio",["João 6.44","Romanos 9.16","Efésios 2.8","Filipenses 2.13"]],["Justificação e fé",["Romanos 3.28","Gálatas 2.16","Tiago 2.24","Romanos 4.5"]],["Batismo",["João 3.5","Romanos 6.3","Tito 3.5","Mateus 28.19"]],["Ceia do Senhor",["João 6.53","Mateus 26.26","1 Coríntios 10.16","1 Coríntios 11.27"]],["Igreja",["Mateus 16.18","Efésios 4.4","1 Timóteo 3.15"]],["Escritura",["2 Timóteo 3.16","2 Pedro 1.20","João 5.39"]],["Ressurreição e últimas coisas",["1 Coríntios 15.20","1 Coríntios 15.42","João 5.28","Apocalipse 20.4"]]];
 const BIB={}, isCA=r=>/catena/i.test(r[6]+" "+r[7]); let chatMsgs=[], chatBusy=false, lastRows=[], pendingQ="", chatRefs=[], chatBook=null; const rowEl=new Map();
-let SA={}; let db=null, running=0, paused=0; const live=new Set(); const TR=new Map(), queue=[];
+let SA={}, capsDone=false; let db=null, running=0, paused=0; const live=new Set(); const TR=new Map(), queue=[];
 const hash=s=>{let h1=0xdeadbeef,h2=0x41c6ce57;for(let i=0;i<s.length;i++){const c=s.charCodeAt(i);h1=Math.imul(h1^c,2654435761);h2=Math.imul(h2^c,1597334677);}
   h1=Math.imul(h1^(h1>>>16),2246822507)^Math.imul(h2^(h2>>>13),3266489909);h2=Math.imul(h2^(h2>>>16),2246822507)^Math.imul(h1^(h1>>>13),3266489909);
   return (h2>>>0).toString(36)+(h1>>>0).toString(36);};
@@ -719,7 +719,7 @@ function card(r){
   acts.appendChild(ab); what.appendChild(acts);
   art.appendChild(who); art.appendChild(what);
   art._tr={art,r,pt,q,status,tog,long,ref:refLabel(cur.b,r[1],r[2],r[3],r[4])};
-  if($("autopt").checked){ if(r.tr) TR.set(keyOf(r),r.tr); const c=TR.get(keyOf(r)); if(c) finish(art._tr,c); else if(io) io.observe(art); }
+  if($("autopt").checked){ if(r.tr) TR.set(keyOf(r),r.tr); const c=TR.get(keyOf(r)); if(c) finish(art._tr,c); else if(capsDone&&!sample){ status.hidden=false; status.textContent="ORIGINAL EM INGLÊS · TRADUÇÃO EM PREPARO"; } else if(io) io.observe(art); }
   return art;
 }
 
@@ -750,8 +750,9 @@ fillArt(); if(window.innerWidth<900) $("filters").open=false;
     $("count").textContent=""; $("list").appendChild(el("p","note err","A base de comentários não carregou ("+e.message+"). Recarregue a página."));
   }
   try{
-    if(window.claude&&window.claude.use){ [sample,db]=await Promise.all([window.claude.use("sample"),window.claude.use("db")]); if(cur) render(false); $("chat").hidden=!sample; dailyGo=true; if(dailyJob&&!dailyJob.done&&$("autopt").checked){ queue.push(dailyJob); pump(); } }
+    if(window.claude&&window.claude.use){ [sample,db]=await Promise.all([window.claude.use("sample"),window.claude.use("db")]); capsDone=true; if(cur) render(false); $("chat").hidden=!sample; dailyGo=true; if(dailyJob&&!dailyJob.done&&$("autopt").checked){ queue.push(dailyJob); pump(); } }
   }catch(e){ sample=null; }
+  if(!capsDone){ capsDone=true; if(!sample&&cur) render(false); }
 })();
 </script>
 </body>
