@@ -1,20 +1,12 @@
-13:27:06 modelo: en -> pb
-13:27:06 10 arquivos neste lote
-13:47:06 2corinthians-0.json: parcial, 732 trechos, 681 mil caracteres em 20 min; faltam 330 trechos
-13:57:10 2corinthians-0.json: 1061 trechos novos, 1015 de 1015 mil caracteres em 30 min; completo
-14:17:30 daniel-0.json: parcial, 690 trechos, 707 mil caracteres em 20 min; faltam 327 trechos
-14:26:37 daniel-0.json: 1010 trechos novos, 1023 de 1023 mil caracteres em 29 min; completo
-14:46:40 genesis-2.json: parcial, 497 trechos, 695 mil caracteres em 20 min; faltam 295 trechos
-14:56:55 genesis-2.json: 788 trechos novos, 1055 de 1074 mil caracteres em 30 min; completo
-15:17:05 job-0.json: parcial, 293 trechos, 705 mil caracteres em 20 min; faltam 181 trechos
-15:27:32 job-0.json: 473 trechos novos, 1070 de 1070 mil caracteres em 31 min; completo
-15:27:34 pronto, pulando: john-5.json
-15:45:49 luke-12.json: 648 trechos novos, 642 de 643 mil caracteres em 18 min; completo
-16:05:51 matthew-0.json: parcial, 441 trechos, 693 mil caracteres em 20 min; faltam 112 trechos
-16:09:10 matthew-0.json: 550 trechos novos, 805 de 807 mil caracteres em 23 min; completo
-16:29:23 numbers-0.json: parcial, 314 trechos, 714 mil caracteres em 20 min; faltam 89 trechos
-16:33:23 numbers-0.json: 400 trechos novos, 853 de 857 mil caracteres em 24 min; completo
-16:53:29 revelation-0.json: parcial, 852 trechos, 721 mil caracteres em 20 min; faltam 251 trechos
-17:00:54 revelation-0.json: 1102 trechos novos, 988 de 993 mil caracteres em 27 min; completo
-17:20:58 wisdom-0.json: parcial, 611 trechos, 698 mil caracteres em 20 min; faltam 339 trechos
-17:33:04 wisdom-0.json: 950 trechos novos, 1108 de 1110 mil caracteres em 32 min; completo
+21:33:53 modelo: en -> pb
+21:33:53 10 arquivos neste lote
+21:33:53 pronto, pulando: 2corinthians-0.json
+21:33:53 pronto, pulando: daniel-0.json
+21:33:53 pronto, pulando: genesis-2.json
+21:33:53 pronto, pulando: job-0.json
+21:33:53 pronto, pulando: john-5.json
+21:33:53 pronto, pulando: luke-12.json
+21:33:53 pronto, pulando: matthew-0.json
+21:33:53 pronto, pulando: numbers-0.json
+21:33:54 pronto, pulando: revelation-0.json
+21:33:54 pronto, pulando: wisdom-0.json
