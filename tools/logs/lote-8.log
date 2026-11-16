@@ -1,4 +1,3 @@
-modelo: en -> pb
-1 arquivos neste lote
-2026-11-16 11:59:53 WARNING: Language en package default expects mwt, which has been added
-john-3.json: 537 trechos novos em 1432s (0.89 MB no arquivo)
+21:33:52 modelo: en -> pb
+21:33:52 10 arquivos neste lote
+21:53:53 1peter-0.json: parcial, 459 trechos, 324 mil caracteres em 20 min; faltam 268 trechos
