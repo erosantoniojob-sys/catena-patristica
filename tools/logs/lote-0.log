@@ -1,0 +1,6 @@
+[0;93m2026-11-16 10:48:59.916649972 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+modelo: en -> pb
+1 arquivos neste lote
+2026-11-16 10:49:01 WARNING: Language en package default expects mwt, which has been added
+frases do dia traduzidas
+john-0.json: 999 trechos novos em 4081s (1.81 MB no arquivo)
