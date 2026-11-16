@@ -1,0 +1,29 @@
+name: Retratos dos autores
+
+on:
+  push:
+    paths: ["tools/saints.py"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  retratos:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install requests pillow
+      - run: python tools/saints.py
+      - name: Gravar no repositório
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/saints tools/logs
+          git diff --cached --quiet && { echo "nada novo"; exit 0; }
+          git commit -m "Retratos dos autores (Wikimedia Commons, domínio público)"
+          for i in 1 2 3; do git pull --rebase origin "${{ github.ref_name }}" && git push origin "HEAD:${{ github.ref_name }}" && break; sleep 10; done
