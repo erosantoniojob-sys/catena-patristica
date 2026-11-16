@@ -289,6 +289,11 @@
 "lic": "CC0",
 "src": "https://commons.wikimedia.org/wiki/File:Gregory_the_Great_with_the_Holy_Spirit.jpg"
 },
+"Hegemonius": {
+"f": "132.jpg",
+"lic": "CC0",
+"src": "https://commons.wikimedia.org/wiki/File:Frontispiece_of_the_Acta_Archelai_by_Hegemonius,_1906_edition.jpg"
+},
 "Hegesippus": {
 "f": "133.jpg",
 "lic": "Public domain",
@@ -313,11 +318,6 @@
 "f": "141.jpg",
 "lic": "Public domain",
 "src": "https://commons.wikimedia.org/wiki/File:Ildefonso_de_Toledo_(cropped).jpg"
-},
-"Irenaeus": {
-"f": "142.jpg",
-"lic": "Public domain",
-"src": "https://commons.wikimedia.org/wiki/File:Saint_irenee_saint_irenee.jpg"
 },
 "Isidore of Pelusium": {
 "f": "146.jpg",
@@ -573,6 +573,11 @@
 "f": "252.jpg",
 "lic": "Public domain",
 "src": "https://commons.wikimedia.org/wiki/File:BLAdd24199PrudentiusFol11v.jpg"
+},
+"Pseudo-Barnabas": {
+"f": "256.jpg",
+"lic": "Public domain",
+"src": "https://commons.wikimedia.org/wiki/File:Codex_Tchacos_p33.jpg"
 },
 "Pseudo-Chrysostom": {
 "f": "258.jpg",
