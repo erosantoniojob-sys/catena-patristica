@@ -1,16 +1,12 @@
-21:33:56 modelo: en -> pb
-21:33:56 10 arquivos neste lote
-21:53:56 1corinthians-3.json: parcial, 696 trechos, 682 mil caracteres em 20 min; faltam 104 trechos
-21:56:15 1corinthians-3.json: 800 trechos novos, 747 de 747 mil caracteres em 22 min; completo
-22:03:33 2peter-0.json: 333 trechos novos, 250 de 250 mil caracteres em 7 min; completo
-22:07:44 esther-0.json: 114 trechos novos, 141 de 141 mil caracteres em 4 min; completo
-22:27:47 hebrews-1.json: parcial, 625 trechos, 669 mil caracteres em 20 min; faltam 449 trechos
-22:39:38 hebrews-1.json: 1070 trechos novos, 1087 de 1087 mil caracteres em 32 min; completo
-22:44:48 joel-0.json: 149 trechos novos, 195 de 195 mil caracteres em 5 min; completo
-22:50:02 jonah-0.json: 164 trechos novos, 188 de 190 mil caracteres em 5 min; completo
-23:02:11 luke-4.json: 422 trechos novos, 425 de 426 mil caracteres em 12 min; completo
-23:22:14 matthew-2.json: parcial, 692 trechos, 737 mil caracteres em 20 min; faltam 9 trechos
-23:22:27 matthew-2.json: 701 trechos novos, 743 de 745 mil caracteres em 20 min; completo
-23:42:29 proverbs-0.json: parcial, 1208 trechos, 770 mil caracteres em 20 min; faltam 317 trechos
-23:48:14 proverbs-0.json: 1519 trechos novos, 990 de 992 mil caracteres em 26 min; completo
-00:04:22 romans-2.json: 564 trechos novos, 610 de 613 mil caracteres em 16 min; completo
+02:56:32 modelo: en -> pb
+02:56:32 10 arquivos neste lote
+02:56:32 pronto, pulando: 1corinthians-3.json
+02:56:32 pronto, pulando: 2peter-0.json
+02:56:32 pronto, pulando: esther-0.json
+02:56:32 pronto, pulando: hebrews-1.json
+02:56:32 pronto, pulando: joel-0.json
+02:56:32 pronto, pulando: jonah-0.json
+02:56:32 pronto, pulando: luke-4.json
+02:56:32 pronto, pulando: matthew-2.json
+02:56:32 pronto, pulando: proverbs-0.json
+02:56:32 pronto, pulando: romans-2.json
