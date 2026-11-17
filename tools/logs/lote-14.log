@@ -1,14 +1,12 @@
-21:33:55 modelo: en -> pb
-21:33:55 10 arquivos neste lote
-21:35:13 2chronicles-0.json: 49 trechos novos, 46 de 46 mil caracteres em 1 min; completo
-21:54:52 colossians-0.json: 668 trechos novos, 721 de 721 mil caracteres em 20 min; completo
-22:14:57 genesis-1.json: parcial, 494 trechos, 773 mil caracteres em 20 min; faltam 238 trechos
-22:22:20 genesis-1.json: 731 trechos novos, 1031 de 1033 mil caracteres em 27 min; completo
-22:40:07 jeremiah-1.json: 514 trechos novos, 649 de 649 mil caracteres em 18 min; completo
-22:40:10 pronto, pulando: john-4.json
-23:00:11 luke-11.json: parcial, 677 trechos, 751 mil caracteres em 20 min; faltam 64 trechos
-23:02:28 luke-11.json: 741 trechos novos, 838 de 843 mil caracteres em 22 min; completo
-23:14:47 mark-3.json: 464 trechos novos, 448 de 448 mil caracteres em 12 min; completo
-23:18:34 nehemiah-0.json: 100 trechos novos, 140 de 140 mil caracteres em 4 min; completo
-23:25:02 psalms-9.json: 174 trechos novos, 246 de 246 mil caracteres em 6 min; completo
-23:27:13 tobit-0.json: 94 trechos novos, 83 de 83 mil caracteres em 2 min; completo
+02:56:57 modelo: en -> pb
+02:56:57 10 arquivos neste lote
+02:56:57 pronto, pulando: 2chronicles-0.json
+02:56:57 pronto, pulando: colossians-0.json
+02:56:57 pronto, pulando: genesis-1.json
+02:56:57 pronto, pulando: jeremiah-1.json
+02:56:57 pronto, pulando: john-4.json
+02:56:57 pronto, pulando: luke-11.json
+02:56:57 pronto, pulando: mark-3.json
+02:56:57 pronto, pulando: nehemiah-0.json
+02:56:57 pronto, pulando: psalms-9.json
+02:56:57 pronto, pulando: tobit-0.json
