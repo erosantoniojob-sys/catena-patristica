@@ -1,24 +1,11 @@
-21:33:45 modelo: en -> pb
-21:33:45 10 arquivos neste lote
-21:53:47 1timothy-0.json: parcial, 358 trechos, 366 mil caracteres em 20 min; faltam 772 trechos
-22:13:50 1timothy-0.json: parcial, 745 trechos, 735 mil caracteres em 40 min; faltam 382 trechos
-22:32:40 1timothy-0.json: 1123 trechos novos, 1075 de 1075 mil caracteres em 59 min; completo
-22:39:34 baruch-0.json: 75 trechos novos, 122 de 122 mil caracteres em 7 min; completo
-22:59:38 genesis-0.json: parcial, 178 trechos, 380 mil caracteres em 20 min; faltam 265 trechos
-23:19:49 genesis-0.json: parcial, 396 trechos, 747 mil caracteres em 40 min; faltam 45 trechos
-23:22:20 genesis-0.json: 441 trechos novos, 794 de 823 mil caracteres em 43 min; completo
-23:42:25 jeremiah-0.json: parcial, 346 trechos, 384 mil caracteres em 20 min; faltam 588 trechos
-00:02:29 jeremiah-0.json: parcial, 696 trechos, 753 mil caracteres em 40 min; faltam 236 trechos
-00:19:02 jeremiah-0.json: 932 trechos novos, 1059 de 1105 mil caracteres em 57 min; completo
-00:19:04 pronto, pulando: john-3.json
-00:39:09 luke-10.json: parcial, 222 trechos, 373 mil caracteres em 20 min; faltam 427 trechos
-00:59:15 luke-10.json: parcial, 447 trechos, 743 mil caracteres em 40 min; faltam 200 trechos
-01:10:16 luke-10.json: 646 trechos novos, 944 de 944 mil caracteres em 51 min; completo
-01:30:19 mark-2.json: parcial, 436 trechos, 361 mil caracteres em 20 min; faltam 647 trechos
-01:50:22 mark-2.json: parcial, 863 trechos, 733 mil caracteres em 40 min; faltam 215 trechos
-01:58:10 mark-2.json: 1076 trechos novos, 879 de 881 mil caracteres em 48 min; completo
-02:06:18 nahum-0.json: 102 trechos novos, 148 de 148 mil caracteres em 8 min; completo
-02:26:22 psalms-8.json: parcial, 340 trechos, 348 mil caracteres em 20 min; faltam 575 trechos
-02:46:24 psalms-8.json: parcial, 611 trechos, 731 mil caracteres em 40 min; faltam 302 trechos
-02:53:41 psalms-8.json: 747 trechos novos, 870 de 1067 mil caracteres em 47 min; faltam 164
-02:53:43 tempo esgotado; o restante fica para a próxima rodada
+02:56:15 modelo: en -> pb
+02:56:15 10 arquivos neste lote
+02:56:15 pronto, pulando: 1timothy-0.json
+02:56:15 pronto, pulando: baruch-0.json
+02:56:15 pronto, pulando: genesis-0.json
+02:56:15 pronto, pulando: jeremiah-0.json
+02:56:15 pronto, pulando: john-3.json
+02:56:15 pronto, pulando: luke-10.json
+02:56:15 pronto, pulando: mark-2.json
+02:56:15 pronto, pulando: nahum-0.json
+03:01:15 psalms-8.json: 164 trechos novos, 190 de 1067 mil caracteres em 5 min; completo
