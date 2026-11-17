@@ -1,17 +1,13 @@
-21:33:57 modelo: en -> pb
-21:33:57 11 arquivos neste lote
-21:54:00 1corinthians-0.json: parcial, 753 trechos, 772 mil caracteres em 20 min; faltam 283 trechos
-22:02:03 1corinthians-0.json: 1031 trechos novos, 1047 de 1047 mil caracteres em 28 min; completo
-22:03:11 2john-0.json: 52 trechos novos, 42 de 42 mil caracteres em 1 min; completo
-22:23:14 ecclesiastes-0.json: parcial, 612 trechos, 780 mil caracteres em 20 min; faltam 249 trechos
-22:32:17 ecclesiastes-0.json: 861 trechos novos, 1124 de 1124 mil caracteres em 29 min; completo
-22:40:53 habakkuk-0.json: 213 trechos novos, 327 de 327 mil caracteres em 9 min; completo
-23:00:56 job-2.json: parcial, 524 trechos, 783 mil caracteres em 20 min; faltam 127 trechos
-23:06:32 job-2.json: 651 trechos novos, 997 de 997 mil caracteres em 26 min; completo
-23:06:34 pronto, pulando: john-7.json
-23:15:04 luke-14.json: 377 trechos novos, 342 de 342 mil caracteres em 8 min; completo
-23:35:07 matthew-10.json: parcial, 654 trechos, 792 mil caracteres em 20 min; faltam 149 trechos
-23:39:33 matthew-10.json: 803 trechos novos, 964 de 972 mil caracteres em 24 min; completo
-23:43:11 philemon-0.json: 170 trechos novos, 139 de 139 mil caracteres em 4 min; completo
-00:02:52 revelation-2.json: 1005 trechos novos, 769 de 770 mil caracteres em 19 min; completo
-00:18:43 zechariah-0.json: 422 trechos novos, 612 de 619 mil caracteres em 16 min; completo
+02:57:29 modelo: en -> pb
+02:57:29 11 arquivos neste lote
+02:57:29 pronto, pulando: 1corinthians-0.json
+02:57:29 pronto, pulando: 2john-0.json
+02:57:29 pronto, pulando: ecclesiastes-0.json
+02:57:29 pronto, pulando: habakkuk-0.json
+02:57:29 pronto, pulando: job-2.json
+02:57:29 pronto, pulando: john-7.json
+02:57:29 pronto, pulando: luke-14.json
+02:57:29 pronto, pulando: matthew-10.json
+02:57:29 pronto, pulando: philemon-0.json
+02:57:29 pronto, pulando: revelation-2.json
+02:57:29 pronto, pulando: zechariah-0.json
