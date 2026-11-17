@@ -1,25 +1,12 @@
-21:33:52 modelo: en -> pb
-21:33:52 10 arquivos neste lote
-21:53:53 1peter-0.json: parcial, 459 trechos, 324 mil caracteres em 20 min; faltam 268 trechos
-22:05:14 1peter-0.json: 722 trechos novos, 506 de 506 mil caracteres em 31 min; completo
-22:06:28 3john-0.json: 44 trechos novos, 19 de 19 mil caracteres em 1 min; completo
-22:26:52 ezekiel-1.json: parcial, 226 trechos, 314 mil caracteres em 20 min; faltam 389 trechos
-22:47:09 ezekiel-1.json: parcial, 546 trechos, 631 mil caracteres em 41 min; faltam 69 trechos
-22:51:53 ezekiel-1.json: 615 trechos novos, 705 de 705 mil caracteres em 45 min; completo
-23:11:59 isaiah-1.json: parcial, 281 trechos, 329 mil caracteres em 20 min; faltam 680 trechos
-23:32:13 isaiah-1.json: parcial, 584 trechos, 655 mil caracteres em 40 min; faltam 375 trechos
-23:52:16 isaiah-1.json: parcial, 931 trechos, 977 mil caracteres em 60 min; faltam 28 trechos
-23:54:06 isaiah-1.json: 959 trechos novos, 1006 de 1026 mil caracteres em 62 min; completo
-23:54:08 pronto, pulando: john-11.json
-23:54:13 judith-0.json: 2 trechos novos, 1 de 1 mil caracteres em 0 min; completo
-00:14:26 luke-8.json: parcial, 343 trechos, 337 mil caracteres em 20 min; faltam 544 trechos
-00:34:33 luke-8.json: parcial, 650 trechos, 672 mil caracteres em 40 min; faltam 235 trechos
-00:50:30 luke-8.json: 882 trechos novos, 931 de 932 mil caracteres em 56 min; completo
-01:10:33 matthew-6.json: parcial, 361 trechos, 339 mil caracteres em 20 min; faltam 598 trechos
-01:30:39 matthew-6.json: parcial, 768 trechos, 677 mil caracteres em 40 min; faltam 189 trechos
-01:40:48 matthew-6.json: 956 trechos novos, 846 de 855 mil caracteres em 50 min; completo
-02:01:02 psalms-3.json: parcial, 175 trechos, 335 mil caracteres em 20 min; faltam 573 trechos
-02:21:06 psalms-3.json: parcial, 413 trechos, 670 mil caracteres em 40 min; faltam 335 trechos
-02:41:08 psalms-3.json: parcial, 693 trechos, 1006 mil caracteres em 60 min; faltam 53 trechos
-02:44:54 psalms-3.json: 746 trechos novos, 1070 de 1071 mil caracteres em 64 min; completo
-02:46:09 ruth-0.json: 23 trechos novos, 20 de 20 mil caracteres em 1 min; completo
+02:56:55 modelo: en -> pb
+02:56:55 10 arquivos neste lote
+02:56:55 pronto, pulando: 1peter-0.json
+02:56:55 pronto, pulando: 3john-0.json
+02:56:55 pronto, pulando: ezekiel-1.json
+02:56:55 pronto, pulando: isaiah-1.json
+02:56:55 pronto, pulando: john-11.json
+02:56:55 pronto, pulando: judith-0.json
+02:56:55 pronto, pulando: luke-8.json
+02:56:55 pronto, pulando: matthew-6.json
+02:56:55 pronto, pulando: psalms-3.json
+02:56:55 pronto, pulando: ruth-0.json
