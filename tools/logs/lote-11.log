@@ -1,18 +1,12 @@
-21:33:57 modelo: en -> pb
-21:33:57 10 arquivos neste lote
-21:43:21 1samuel-2.json: 297 trechos novos, 346 de 346 mil caracteres em 9 min; completo
-22:03:06 acts-2.json: 1221 trechos novos, 741 de 741 mil caracteres em 20 min; completo
-22:23:10 galatians-0.json: parcial, 618 trechos, 733 mil caracteres em 20 min; faltam 169 trechos
-22:27:44 galatians-0.json: 786 trechos novos, 897 de 902 mil caracteres em 25 min; completo
-22:47:47 isaiah-4.json: parcial, 668 trechos, 724 mil caracteres em 20 min; faltam 42 trechos
-22:49:35 isaiah-4.json: 710 trechos novos, 786 de 789 mil caracteres em 22 min; completo
-22:49:37 pronto, pulando: john-14.json
-23:08:16 luke-0.json: 722 trechos novos, 663 de 668 mil caracteres em 19 min; completo
-23:28:19 mark-0.json: parcial, 948 trechos, 737 mil caracteres em 20 min; faltam 92 trechos
-23:29:56 mark-0.json: 1038 trechos novos, 794 de 804 mil caracteres em 22 min; completo
-23:49:59 matthew-9.json: parcial, 664 trechos, 725 mil caracteres em 20 min; faltam 5 trechos
-23:50:06 matthew-9.json: 669 trechos novos, 728 de 731 mil caracteres em 20 min; completo
-00:10:08 psalms-6.json: parcial, 497 trechos, 750 mil caracteres em 20 min; faltam 223 trechos
-00:19:21 psalms-6.json: 719 trechos novos, 1093 de 1098 mil caracteres em 29 min; completo
-00:39:35 songofsolomon-1.json: parcial, 220 trechos, 748 mil caracteres em 20 min; faltam 193 trechos
-00:49:56 songofsolomon-1.json: 410 trechos novos, 1123 de 1124 mil caracteres em 31 min; completo
+02:57:16 modelo: en -> pb
+02:57:16 10 arquivos neste lote
+02:57:16 pronto, pulando: 1samuel-2.json
+02:57:16 pronto, pulando: acts-2.json
+02:57:16 pronto, pulando: galatians-0.json
+02:57:16 pronto, pulando: isaiah-4.json
+02:57:16 pronto, pulando: john-14.json
+02:57:16 pronto, pulando: luke-0.json
+02:57:16 pronto, pulando: mark-0.json
+02:57:16 pronto, pulando: matthew-9.json
+02:57:16 pronto, pulando: psalms-6.json
+02:57:16 pronto, pulando: songofsolomon-1.json
