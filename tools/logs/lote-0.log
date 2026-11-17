@@ -1,18 +1,13 @@
-21:33:54 modelo: en -> pb
-21:33:54 11 arquivos neste lote
-21:35:13 1chronicles-0.json: 39 trechos novos, 51 de 51 mil caracteres em 1 min; completo
-21:55:27 2corinthians-1.json: parcial, 740 trechos, 748 mil caracteres em 20 min; faltam 86 trechos
-21:57:34 2corinthians-1.json: 826 trechos novos, 821 de 821 mil caracteres em 22 min; completo
-22:07:32 deuteronomy-0.json: 384 trechos novos, 367 de 367 mil caracteres em 10 min; completo
-22:27:35 genesis-3.json: parcial, 642 trechos, 743 mil caracteres em 20 min; faltam 293 trechos
-22:36:47 genesis-3.json: 932 trechos novos, 1089 de 1096 mil caracteres em 29 min; completo
-22:56:51 job-1.json: parcial, 393 trechos, 721 mil caracteres em 20 min; faltam 277 trechos
-23:06:13 job-1.json: 670 trechos novos, 1059 de 1061 mil caracteres em 29 min; completo
-23:06:15 pronto, pulando: john-6.json
-23:26:17 luke-13.json: parcial, 772 trechos, 751 mil caracteres em 20 min; faltam 288 trechos
-23:33:40 luke-13.json: 1056 trechos novos, 1025 de 1026 mil caracteres em 27 min; completo
-23:49:11 matthew-1.json: 554 trechos novos, 570 de 571 mil caracteres em 15 min; completo
-23:51:20 obadiah-0.json: 65 trechos novos, 77 de 77 mil caracteres em 2 min; completo
-00:11:24 revelation-1.json: parcial, 870 trechos, 742 mil caracteres em 20 min; faltam 298 trechos
-00:17:36 revelation-1.json: 1166 trechos novos, 976 de 977 mil caracteres em 26 min; completo
-00:20:58 wisdom-1.json: 112 trechos novos, 120 de 120 mil caracteres em 3 min; completo
+02:56:28 modelo: en -> pb
+02:56:28 11 arquivos neste lote
+02:56:28 pronto, pulando: 1chronicles-0.json
+02:56:28 pronto, pulando: 2corinthians-1.json
+02:56:28 pronto, pulando: deuteronomy-0.json
+02:56:28 pronto, pulando: genesis-3.json
+02:56:28 pronto, pulando: job-1.json
+02:56:28 pronto, pulando: john-6.json
+02:56:28 pronto, pulando: luke-13.json
+02:56:28 pronto, pulando: matthew-1.json
+02:56:28 pronto, pulando: obadiah-0.json
+02:56:28 pronto, pulando: revelation-1.json
+02:56:28 pronto, pulando: wisdom-1.json
