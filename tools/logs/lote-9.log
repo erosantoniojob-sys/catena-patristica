@@ -1,18 +1,12 @@
-21:33:54 modelo: en -> pb
-21:33:54 10 arquivos neste lote
-21:53:56 1samuel-0.json: parcial, 407 trechos, 780 mil caracteres em 20 min; faltam 132 trechos
-22:01:15 1samuel-0.json: 539 trechos novos, 1043 de 1043 mil caracteres em 27 min; completo
-22:21:18 acts-0.json: parcial, 957 trechos, 782 mil caracteres em 20 min; faltam 205 trechos
-22:25:21 acts-0.json: 1161 trechos novos, 928 de 928 mil caracteres em 24 min; completo
-22:45:26 ezekiel-2.json: parcial, 323 trechos, 745 mil caracteres em 20 min; faltam 25 trechos
-22:46:35 ezekiel-2.json: 348 trechos novos, 784 de 784 mil caracteres em 21 min; completo
-23:06:39 isaiah-2.json: parcial, 750 trechos, 699 mil caracteres em 20 min; faltam 432 trechos
-23:16:20 isaiah-2.json: 1180 trechos novos, 1052 de 1052 mil caracteres em 30 min; completo
-23:16:22 pronto, pulando: john-12.json
-23:24:49 lamentations-0.json: 244 trechos novos, 306 de 306 mil caracteres em 8 min; completo
-23:43:09 luke-9.json: 604 trechos novos, 694 de 694 mil caracteres em 18 min; completo
-00:03:12 matthew-7.json: parcial, 761 trechos, 788 mil caracteres em 20 min; faltam 37 trechos
-00:03:52 matthew-7.json: 798 trechos novos, 812 de 819 mil caracteres em 21 min; completo
-00:23:55 psalms-4.json: parcial, 485 trechos, 785 mil caracteres em 20 min; faltam 210 trechos
-00:33:06 psalms-4.json: 695 trechos novos, 1153 de 1157 mil caracteres em 29 min; completo
-00:43:41 sirach-0.json: 398 trechos novos, 420 de 421 mil caracteres em 11 min; completo
+02:57:32 modelo: en -> pb
+02:57:32 10 arquivos neste lote
+02:57:32 pronto, pulando: 1samuel-0.json
+02:57:32 pronto, pulando: acts-0.json
+02:57:32 pronto, pulando: ezekiel-2.json
+02:57:32 pronto, pulando: isaiah-2.json
+02:57:32 pronto, pulando: john-12.json
+02:57:32 pronto, pulando: lamentations-0.json
+02:57:32 pronto, pulando: luke-9.json
+02:57:32 pronto, pulando: matthew-7.json
+02:57:32 pronto, pulando: psalms-4.json
+02:57:32 pronto, pulando: sirach-0.json
