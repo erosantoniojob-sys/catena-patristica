@@ -1,19 +1,12 @@
-21:34:05 modelo: en -> pb
-21:34:05 10 arquivos neste lote
-21:54:06 1corinthians-2.json: parcial, 646 trechos, 702 mil caracteres em 20 min; faltam 319 trechos
-22:01:52 1corinthians-2.json: 962 trechos novos, 973 de 973 mil caracteres em 28 min; completo
-22:05:25 2maccabees-0.json: 90 trechos novos, 120 de 120 mil caracteres em 4 min; completo
-22:25:34 ephesians-1.json: parcial, 659 trechos, 699 mil caracteres em 20 min; faltam 307 trechos
-22:34:08 ephesians-1.json: 960 trechos novos, 1002 de 1004 mil caracteres em 29 min; completo
-22:54:11 hebrews-0.json: parcial, 575 trechos, 692 mil caracteres em 20 min; faltam 261 trechos
-23:02:42 hebrews-0.json: 836 trechos novos, 988 de 989 mil caracteres em 29 min; completo
-23:23:10 job-4.json: parcial, 244 trechos, 727 mil caracteres em 20 min; faltam 144 trechos
-23:35:13 job-4.json: 387 trechos novos, 1158 de 1158 mil caracteres em 32 min; completo
-23:35:15 pronto, pulando: john-9.json
-23:55:15 luke-3.json: parcial, 677 trechos, 703 mil caracteres em 20 min; faltam 250 trechos
-00:02:56 luke-3.json: 924 trechos novos, 973 de 975 mil caracteres em 28 min; completo
-00:22:59 matthew-12.json: parcial, 648 trechos, 717 mil caracteres em 20 min; faltam 79 trechos
-00:25:13 matthew-12.json: 726 trechos novos, 796 de 801 mil caracteres em 22 min; completo
-00:26:37 prayerofazariah-0.json: 58 trechos novos, 47 de 47 mil caracteres em 1 min; completo
-00:46:40 romans-1.json: parcial, 575 trechos, 712 mil caracteres em 20 min; faltam 142 trechos
-00:52:38 romans-1.json: 714 trechos novos, 920 de 931 mil caracteres em 26 min; completo
+02:56:53 modelo: en -> pb
+02:56:53 10 arquivos neste lote
+02:56:53 pronto, pulando: 1corinthians-2.json
+02:56:53 pronto, pulando: 2maccabees-0.json
+02:56:53 pronto, pulando: ephesians-1.json
+02:56:53 pronto, pulando: hebrews-0.json
+02:56:53 pronto, pulando: job-4.json
+02:56:53 pronto, pulando: john-9.json
+02:56:53 pronto, pulando: luke-3.json
+02:56:53 pronto, pulando: matthew-12.json
+02:56:53 pronto, pulando: prayerofazariah-0.json
+02:56:53 pronto, pulando: romans-1.json
